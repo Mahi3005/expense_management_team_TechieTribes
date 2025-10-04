@@ -5,5 +5,7 @@ export const ROUTES = {
     SIGNUP: '/signup',
     FORGOT_PASSWORD: '/forgot-password',
     DASHBOARD: '/dashboard',
+    USER_MANAGEMENT: '/dashboard/users',
+    APPROVAL_RULES: '/dashboard/approval-rules',
     // Add more routes as needed
 };

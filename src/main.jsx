@@ -4,12 +4,15 @@ import './index.css'
 import App from './App.jsx'
 import { Toaster } from 'sonner'
 import { ThemeProvider } from '@/components/theme-provider'
+import { AuthProvider } from '@/context/AuthContext'
 
 createRoot(document.getElementById('root')).render(
     <StrictMode>
         <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
-            <Toaster position="top-right" richColors />
-            <App />
+            <AuthProvider>
+                <Toaster position="top-right" richColors />
+                <App />
+            </AuthProvider>
         </ThemeProvider>
     </StrictMode>,
 )
